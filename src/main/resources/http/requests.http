@@ -1,0 +1,85 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "aksanovkamil@gmail.com",
+  "password": "12345678Kamil"
+}
+
+###
+
+GET http://localhost:8080/teachers
+ACCESS-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJleHAiOjE2MjI2MzAyNTIsImVtYWlsIjoiYWtzYW5vdmthbWlsQGdtYWlsLmNvbSJ9.Oi8Fq4bxuVw19p1PFRD4ifAeFmzNzW4Lo73vY7DE2bw
+
+###
+
+POST http://localhost:8080/refresh
+REFRESH-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiZXhwIjoxNjIzMjQxODM4fQ.WLqaxJopadxoO00zapv20EI3F2we3nZHIP-8wYPXZz0
+
+###
+
+GET http://localhost:8080/logout
+ACCESS-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJleHAiOjE2MjI2MzE1NTcsImVtYWlsIjoiYWtzYW5vdmthbWlsQGdtYWlsLmNvbSJ9.nkuQg9rd1Mw1hMjB7XuLWH-ODbDJABLAhclaWCKSz2E
+REFRESH-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwIiwiZXhwIjoxNjIzMjM2MDU3fQ.c5nGWz1eGG0VGT5zfAsumn0sAfKw46E8QJ_FRh6m2Ac
+
+###
+
+POST http://localhost:8080/users/1/block
+ACCESS-TOKEN:
+
+###
+
+POST http://localhost:8080/teachers
+Content-Type: application/json
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiZXhwIjoxNjE5NTMxMTExfQ.LZsD0b9TskBv-JXRb3GfZpMi_Y00l6_C6Fup1kSyXkM"""123213123213
+
+{
+  "firstName": "Марсель1",
+  "lastName": "Сидиков1"
+}
+
+###
+
+POST http://localhost/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Михаил",
+  "lastName": "Абрамский"
+}
+
+###
+
+PUT http://localhost/teachers/1
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Ситдиков"
+}
+
+###
+
+DELETE http://localhost/teachers/1
+
+###
+
+GET http://localhost:8080/courses
+
+###
+
+POST http://localhost/courses
+Content-Type: application/json
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiZXhwIjoxNjE5NTMxMTExfQ.LZsD0b9TskBv-JXRb3GfZpMi_Y00l6_C6Fup1kSyXkM
+{
+  "title": "Информатика"
+}
+
+###
+
+POST http://localhost/courses/1/teachers
+Content-Type: application/json
+
+{
+  "id": 1
+}
